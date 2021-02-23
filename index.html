@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Guliye | Front End Developer</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.12.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <h1><a href="#">coder guliye</a></h1>
+            </div>
+            <ul class="main-links">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contacts">contacts</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="hero-content">
+                <!-- <div class="underline"></div> -->
+                <h1>hi, i'm guliye</h1>
+                <span>a front end developer</span>
+                <p>I build and design websites from scratch. I also make websites more Responsive and enhance User Experience thus making them rank higher in Search Engines.</p>
+                <a href="#about" class="btn">about me</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="./images/guliye1.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- about section -->
+    <section class="about-section" id="about">
+        <h1>about</h1>
+        <div class="underline"></div>
+        <div class="image-container">
+            <img src="./images/guliye1.jpg" alt="">
+        </div>
+        <p class="info" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">HI again, Am Guliye, a Front-End Web Developer based in Kenya. I have been building and designing websites for Small & Medium sized Busineses, Companies and big Corporations for a period of 3 years now.</p>
+        <p class="info" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">I first design the UI of websites using Adobe XD or Figma and then turn that design into a fully functioning website. I build websites using cutting edge Front-End technologies like HTML5, CSS3, JAVASCRIPT & REACT!</p>
+        <p class="info">I do Freelancing and serve my clients all over the globe.</p>
+        <article class="skills">
+            <h2>skills</h2>
+            <div class="underline"></div>
+            <ul class="skills-menu">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+                <li>git/github</li>
+            </ul>
+        </article>
+        <article class="current-skills">
+            <p>Meanwhile, am currently studying these skills in order to become Full-stack Developer</p>
+            <div class="underline"></div>
+            <ul class="skills-menu">
+                <li>react</li>
+                <li>python</li>
+                <li>django</li>
+                <li>sql</li>
+            </ul>
+        </article>
+    </section>
+    <!-- projects section -->
+    <section class="project-section" id="projects">
+        <h1>projects</h1>
+        <div class="underline"></div>
+        <div class="filter-btns">
+            <button class="filter-btn" data-id="all">all</button>
+            <button class="filter-btn" data-id="html">html/css</button>
+            <button class="filter-btn" data-id="javascript">javascript</button>
+            <button class="filter-btn" data-id="react">react js</button>
+        </div>
+        <div class="showcase-projects">
+            <!-- <article>
+                <div class="project-image">
+                    <img src="./images/menu.PNG" alt="">
+                </div>
+                <div class="project-content">
+                    <h2 class="title">menu project</h2>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad commodi quo aut minima exercitationem quam asperiores facilis eveniet. Consectetur, perferendis?</p>
+                </div>
+            </article> -->
+        </div>
+    </section>
+    <!-- contact section -->
+    <section class="contact-section" id="contacts">
+        <h1>contacts</h1>
+        <div class="underline"></div>
+        <p class="greet">Feel free to say, HI</p>
+        <p class="alert"></p>
+        <div class="form-section">
+            <form action="" data-aos="fade-down">
+                <p>Name: <input type="text" placeholder="Your name..." id="name"></p>
+                <p>Email: <input type="email" placeholder="Your email..." id="email"></p>
+                <p>Message: <textarea name="" id="message" cols="30" rows="10" placeholder="Write Your Message..."></textarea></p>
+                <p><input type="submit" value="Submit" class="submit-btn"></p>
+            </form>
+            <div class="social-media-icons">
+                <a href="#"><i class="fab fa-facebook">facebook</i></a>
+                <a href="#"><i class="fab fa-twitter">twitter</i></a>
+                <a href="#"><i class="fab fa-github">github</i></a>
+               
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <p>&copy; coded by <span>Guliye</span></p>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.init({
+          useClassNames: false,
+          debounceDelay: 50,
+          throttleDelay: 99,
+          once: false,
+          mirror: true,
+          startEvent: 'DOMContentLoaded',
+          initClassName: 'aos-init',
+          animatedClassName: 'aos-animate',
+        });
+      </script>
+</body>
+</html>
